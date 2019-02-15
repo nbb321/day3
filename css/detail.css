@@ -1,0 +1,403 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 1.6rem;
+  font-size: 0.37333rem;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.6rem;
+  background: #ccc;
+}
+
+.header section:nth-of-type(1) {
+  width: 80%;
+}
+
+.header section:nth-of-type(1) span {
+  font-size: 0.42667rem;
+}
+
+.header section:nth-of-type(1) span:nth-of-type(1) {
+  padding-left: 0.26667rem;
+}
+
+.header section:nth-of-type(2) {
+  width: 20%;
+}
+
+.header section:nth-of-type(2) span {
+  font-size: 0.53333rem;
+}
+
+.mainbody {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.pos {
+  width: 100%;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 0.37333rem;
+  display: flex;
+  align-items: center;
+}
+
+.pos h2 {
+  width: 100%;
+}
+
+.hour {
+  width: 100%;
+  height: 1.33333rem;
+  font-size: 0.37333rem;
+  line-height: 1.33333rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hour h2 {
+  width: 70%;
+}
+
+.hour h2 span {
+  font-size: 0.53333rem;
+  color: #f89;
+}
+
+.hour p {
+  width: 30%;
+}
+
+.main-list {
+  width: 100%;
+  margin-top: 0.53333rem;
+  font-size: 0.37333rem;
+}
+
+.main-list dl {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.02667rem solid #ccc;
+}
+
+.main-list dl dt {
+  width: 40%;
+}
+
+.main-list dl dt span {
+  font-size: 0.53333rem;
+  color: #f89;
+}
+
+.main-list dl dd {
+  width: 60%;
+}
+
+.main-list dl dd h2 {
+  margin: 0.13333rem;
+}
+
+.main-list dl dd p {
+  color: #666;
+  margin: 0.13333rem;
+}
+
+.main-list dl dd section {
+  width: 100%;
+  display: flex;
+}
+
+.main-list dl dd section .shop-left {
+  width: 70%;
+}
+
+.main-list dl dd section .shop-left p {
+  color: #f89;
+}
+
+.main-list dl dd section .shop-left span {
+  color: orange;
+}
+
+.main-list dl dd section .shop-right {
+  width: 30%;
+  display: flex;
+}
+
+.main-list dl dd section .shop-right span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 0.66667rem;
+  height: 0.66667rem;
+  border: 0.02667rem solid #ccc;
+  margin-right: 0.13333rem;
+  text-align: center;
+  line-height: 0.66667rem;
+}
+
+.zong,
+.quan,
+.hong,
+.shi,
+.yun {
+  font-size: 0.37333rem;
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  line-height: 1.33333rem;
+}
+
+.zong section,
+.quan section,
+.hong section,
+.shi section,
+.yun section {
+  text-align: center;
+  width: 50%;
+}
+
+.last {
+  width: 100%;
+  height: 1.33333rem;
+  width: 100%;
+  height: 1.33333rem;
+  font-size: 0.37333rem;
+  line-height: 1.33333rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.last h2 {
+  width: 70%;
+}
+
+.last h2 span {
+  font-size: 0.53333rem;
+  color: #f89;
+}
+
+.last p {
+  width: 30%;
+  height: 100%;
+  background: #f89;
+  text-align: center;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.37333rem;
+  text-align: center;
+}
+
+.footer dl {
+  width: 20%;
+  margin-top: 0.26667rem;
+}
+
+.footer dl.active {
+  color: #f89;
+}
